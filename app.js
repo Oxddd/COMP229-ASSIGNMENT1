@@ -1,6 +1,7 @@
 // installed 3rd party packages
 let createError = require('http-errors');
 let express = require('express');
+let dotenv = require('dotenv');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');

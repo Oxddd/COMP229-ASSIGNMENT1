@@ -26,4 +26,14 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });
 
+/* GET Business page. */
+router.get('/business', function(req, res, next) {
+  res.render('business', { title: 'Business' });
+});
+
+/* GET Add_user page. */
+router.get('/add_user', function(req, res, next) {
+  res.render('add_user', { title: 'Add_user' });
+});
+
 module.exports = router;

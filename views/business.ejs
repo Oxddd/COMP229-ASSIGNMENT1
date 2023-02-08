@@ -1,0 +1,65 @@
+<!-- index.ejs Xiangde Ou 2023.2.6 -->
+<% include partials/header.ejs %>
+<!-- main navagation bar -->
+<% include partials/main_nav.ejs %>
+
+
+  <!-- Main Content -->
+  <main id="site-business">
+    <div>
+        <h1 class="myTextAlign">Business Contacts List View</h1>
+    </div>
+    <div style="max-width: 1024px;margin:auto;">
+        <div class="box-nav d-flex-justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient">New User<i class="fa-solid fa-user"></i></span>
+            </a>
+        </div>
+
+
+        <!-- form handling-->
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>@Email</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>example@gmail.com</td>
+                        <td>Male</td>
+                        <td>Active</td>
+                        <td>
+                            <a href="#" class="btn border-shadow update">
+                                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                            </a>
+                            <a class="btn border-shadow delete">
+                                <span class="text-gradient"><i class="fa-solid fa-trash-can"></i></span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+
+    
+  </main>
+
+
+  <% include partials/bottom_nav.ejs %>
+  <!-- SCRIPT SECTION -->
+  <% include partials/footer.ejs %>
+
+
+
+
