@@ -36,4 +36,9 @@ router.get('/add_user', function(req, res, next) {
   res.render('add_user', { title: 'Add_user' });
 });
 
+/* GET Updateuser page. */
+router.get('/updateuser', function(req, res, next) {
+  res.render('updateuser', { title: 'Updateuser' });
+});
+
 module.exports = router;
