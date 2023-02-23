@@ -12,7 +12,7 @@
     <div style="max-width: 1024px;margin:auto;">
         <div class="box-nav d-flex-justify-between">
             <div class="filter">
-                <a href="/"><i class="fas fa-angle-double-left"></i>All Users</a>
+                <a href="/business"><i class="fas fa-angle-double-left"></i>All Users</a>
             </div>
         </div>
 
@@ -22,52 +22,10 @@
         </div>
 
         <!-- form handling-->
-        <form method="POST" id="update_user">
-            <div class="new_user">
 
-                <div class="form-group">
-                    <label for="name" >Name</label>
-                    <input type="hidden" name="id" value="">
-                    <input type="text" name="name" value="" placeholder="Xiangde Ou">
-                </div>
+        <% include partials/add_user_form.ejs %>
 
-                <div class="form-group">
-                    <label for="Email" >Email</label>
 
-                    <input type="text" name="Email" value="" placeholder="example@gmail.com">
-                </div>
-
-                <div class="form-group">
-                    <label for="Gender" >Gender</label>
-                    <div class="radio inline">
-                        <input type="radio" id="radio-2" name="Gender" value="Male">
-                        <label for="radio-2" class="radio-label">Male</label>
-                    </div>
-                    <div class="radio inline">
-                        <input type="radio" id="radio-3" name="Gender" value="Female">
-                        <label for="radio-3" class="radio-label">Female</label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="Status">Status</label>
-                    <div class="radio inline">
-                        <input type="radio" id="radio-4" name="status" value="Active" >
-                        <label for="radio-4" class="radio-label">Active</label>
-                    </div>
-                    <div class="radio inline">
-                        <input type="radio" id="radio-5" name="status" value="Inactive" >
-                        <label for="radio-5" class="radio-label">Inactive</label>
-                    </div>
-                </div>
-        
-
-                <div class="form-group">
-                    <button type="submit" class="btn text-dark update">Save</button>
-                </div>
-            </div>
-
-        </form>
     </div>
 
 
