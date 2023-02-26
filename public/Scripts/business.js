@@ -18,7 +18,8 @@ $("#update_user").submit(function(event){
 
 
     var request = {
-        "url" : `http://localhost:3000/business/updateuser/api/users/${data.id}`,
+       // "url" : `http://localhost:3000/business/updateuser/api/users/${data.id}`,
+        "url" : `https://comp229-assignment1.onrender.com/business/updateuser/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -35,7 +36,8 @@ if(window.location.pathname == "/business"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://localhost:3000/business/api/users/${id}`,
+            //"url" : `http://localhost:3000/business/api/users/${id}`,
+            "url" : `https://comp229-assignment1.onrender.com/business/api/users/${id}`,
             "method" : "DELETE"
         }
 

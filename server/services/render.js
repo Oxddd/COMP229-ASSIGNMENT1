@@ -26,7 +26,8 @@ exports.contact = (req, res) => {
 exports.business = (req, res) => {
 
     // Make a get request to /api/users
-    axios.get('http://localhost:3000/business/api/users')
+    //axios.get('http://localhost:3000/business/api/users')
+    axios.get('https://comp229-assignment1.onrender.com/business/api/users')
         .then(function(response){
             console.log(response.data)
 
@@ -60,7 +61,8 @@ exports.add_user = (req, res) =>{
 }
 
 exports.updateuser = (req, res) =>{
-    axios.get('http://localhost:3000/business/api/users', { params : { id : req.query.id }})
+    //axios.get('http://localhost:3000/business/api/users', { params : { id : req.query.id }})
+    axios.get('https://comp229-assignment1.onrender.com/business/api/users', { params : { id : req.query.id }})
     .then(function(userdata){
         res.render("updateuser", { title:'Updateuser',user : userdata.data})
         console.log(userdata.data);
