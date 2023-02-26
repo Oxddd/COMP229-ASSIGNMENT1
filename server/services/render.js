@@ -28,7 +28,25 @@ exports.business = (req, res) => {
     // Make a get request to /api/users
     axios.get('http://localhost:3000/business/api/users')
         .then(function(response){
-            //console.log(response.data)
+            console.log(response.data)
+
+            //An alphabetically sorted list of contacts should appear on this page.
+            sortedNames = response.data
+            //console.log("sortedNames");
+            sortedNames.sort(function(a,b){
+                aName = a.name.toUpperCase();
+                bName = b.name.toUpperCase();
+                if (aName < bName) {
+                    return -1;
+                  }
+                  if (aName > bName) {
+                    return 1;
+                  }
+                  return 0;
+            });
+
+            //console.log(sortedNames);
+
             res.render('business',{ title: 'Business',users:response.data});
         })
         .catch(err =>{
