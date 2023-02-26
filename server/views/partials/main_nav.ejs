@@ -1,0 +1,82 @@
+<!-- main_nav.ejs Xiangde Ou 2023.1.28 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">COMP229</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-            
+         expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+
+          <!-- Home Page-->
+          <% if(title=="Index"){ %> 
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" href="/"><i class="fa-solid fa-lg fa-house"></i> Home </a>
+            </li>
+          <%}else{%>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/"><i class="fa-solid fa-house"></i> Home </a>
+            </li>
+          <% } %>  
+          
+          <!-- About Page-->
+          <% if(title=="About"){ %> 
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" href="/about"><i class="fa-solid fa-lg fa-circle-info"></i> About </a>
+            </li>
+          <%}else{%>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/about"><i class="fa-solid fa-circle-info"></i> About </a>
+            </li>
+          <% } %>  
+          
+          <!-- Projects page -->
+
+          <% if(title=="Projects"){ %> 
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" href="/projects"><i class="fa-solid fa-lg fa-diagram-project"></i> Projects </a>
+            </li>
+          <%}else{%>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/projects"><i class="fa-solid fa-diagram-project"></i> Projects </a>
+            </li>
+          <% } %>  
+          
+          <!-- SERVICES PAGE -->
+          <% if(title=="Services"){ %> 
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" href="/services"><i class="fa-solid fa-lg fa-kitchen-set"></i> Services </a>
+            </li>
+          <%}else{%>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/services"><i class="fa-solid fa-kitchen-set"></i> Services </a>
+            </li>
+          <% } %>  
+          
+          <!-- Contact page-->
+          <% if(title=="Contact"){ %> 
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" href="/contact"><i class="fa-solid fa-lg fa-phone"></i> Contact </a>
+            </li>
+          <%}else{%>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/contact"><i class="fa-solid fa-phone"></i> Contact </a>
+            </li>
+          <% } %>  
+          
+          <!-- login page -->
+          <% if(title=="Login"){ %> 
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" href="/login"><i class="fa-solid fa-right-to-bracket"></i> Login </a>
+            </li>
+          <%}else{%>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/login"><i class="fa-solid fa-right-to-bracket"></i> Login </a>
+            </li>
+          <% } %> 
+          
+      </div>
+    </div>
+  </nav>
